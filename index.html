@@ -4,13 +4,15 @@
      var p = document.getElementById("if");
      p.src = document.getElementById("in").value;
     var f = document.getElementById("if");
-  f.width = window.innerWidth*.8;
-  f.height = window.innerHeight*.8;
+    f.width = window.innerWidth;
+    f.height = window.innerHeight;
   }
   </script>
 <iframe id = "if" src=""
-width="512"
-height="288"
+width="0"
+height="0"
 >
 </iframe>
-<input id = "in" onclick="ok()"> </input>
+<p>Enter the URL here: </p>
+<input id = "in"> </input>
+<button onclick="ok()">Go!</button>
